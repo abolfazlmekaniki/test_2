@@ -4,7 +4,7 @@ import Layout from "../../../layouts/Main"
 
 const LoginPage = () => {
   return (
-    <Layout children1={<Login/>} children2={<ContinueWith/>} />
+    <Layout children1={<Login/>} children2={<ContinueWith/>} text="Or continue with" />
   )
 }
 
