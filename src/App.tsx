@@ -1,11 +1,12 @@
-import Form from "./components/authentication/Form"
-
+import LoginPage from "./pages/Authentication/LoginPage"
 
 function App() {
 
 
   return (
-   <Form/>
+   
+   <LoginPage/>
+   
   )
 }
 

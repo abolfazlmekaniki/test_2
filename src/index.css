@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    @font-face {
+      font-family: sora_med;
+      src: url(../public/assets/fonts/Sora-Medium.ttf);
+    }
+    @font-face {
+        font-family: sora_lig;
+        src: url(../public/assets/fonts/Sora-Light.ttf);
+    }
+    @font-face {
+        font-family: sora_bold;
+        src: url(../public/assets/fonts/Sora-Bold.ttf);
+    }
+    @font-face {
+        font-family: sora_reg;
+        src: url(../public/assets/fonts/Sora-Medium.ttf);
+    }
+
+}
