@@ -5,7 +5,7 @@ interface props{
 
 const Button:React.FC<props> = ({value}) => {
   return (
-    <button className="btn font-sora_med max-w-[361px] rounded-3xl bg-btn_yellow hover:bg-btn_orange">{value}</button>
+    <button className="btn w-full font-sora_med max-w-[361px] rounded-3xl bg-btn_yellow hover:bg-btn_orange">{value}</button>
   )
 }
 
