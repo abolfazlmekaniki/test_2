@@ -12,10 +12,10 @@ const LoginForm = ():JSX.Element => {
         <div className="flex space-x-1 px-2 justify-between items-center">
             <div className="flex space-x-1 px-2 items-center">
                 <input type="checkbox" defaultChecked className="checkbox" />
-                <span className="label-text font-sora_lig text-xs sm:text-base">Remember me</span> 
+                <span className="label-text font-sora_lig text-xs sm:text-sm">Remember me</span> 
             
             </div>
-            <a href="/" className="ml-10 font-sora_med text-xs sm:text-base">Forgot Password</a>
+            <a href="/" className="ml-10 font-sora_med text-xs sm:text-sm">Forgot Password</a>
         </div>
         <Button value="Log in"/>
     </form>
