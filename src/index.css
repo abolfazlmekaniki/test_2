@@ -10,6 +10,7 @@
     overflow-x: hidden;
 }
 
+
 @layer base {
     @font-face {
       font-family: sora_med;
