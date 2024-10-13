@@ -7,7 +7,7 @@ import CreatePatient from "../pages/CreatePatient";
 
 const router = createBrowserRouter([
   {
-    path: "https://test-two-gilt-98.vercel.app/",
+    path: "/",
     children:[
         {index:true,element:<LoginPage/>},
         {path:"/login",element:<LoginPage/>},
