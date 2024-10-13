@@ -43,16 +43,16 @@ const LoginForm = ():JSX.Element => {
   }
 
   return (
-    <form className="flex flex-col  space-y-4 max-w-[361px] ">
+    <form className="flex flex-col w-full  h-auto space-y-4 max-w-[361px] ">
         <Input value={info.username} onchange={(e:any)=>setInfo({...info,username:e.target.value})} placeholder="Name" icon={UserProfile} type="text"/>
         <Input value={info.password} onchange={(e:any)=>setInfo({...info,password:e.target.value})} placeholder="Password" icon={Password} type="password" icon_2={<Eye/>}/>
         <div className="flex space-x-1 px-2 justify-between items-center">
             <div className="flex space-x-1 px-2 items-center">
-                <input type="checkbox" defaultChecked className="checkbox" />
-                <span className="label-text font-sora_lig text-xs sm:text-sm">Remember me</span> 
+                <input type="checkbox" defaultChecked className="checkbox w-[18px] h-[18px]" />
+                <span className="label-text font-sora_lig text-[12.44px] font-normal">Remember me</span> 
             
             </div>
-            <a href="/" className="ml-10 font-sora_med text-xs sm:text-sm">Forgot Password</a>
+            <a href="/" className="ml-10 font-sora_med text-secondery_text text-[12.44px] font-normal">Forgot Password</a>
         </div>
         <Button onclick={handleClick} value="Log in"/>
     </form>

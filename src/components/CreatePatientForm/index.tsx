@@ -6,12 +6,12 @@ import Sex from '../Sex'
 
 const CreatePatientForm = ():JSX.Element => {
   return (
-    <form className="flex w-full flex-col relative h-full space-y-4 max-w-[361px] ">
+    <form className="flex w-full flex-col p-1 h-full space-y-4 max-w-[361px] ">
         <Input value='' placeholder="Name"  type="text"/>
         <Input value='' placeholder="Family"  type="text" />
         <Input value='' placeholder="Birthday Date" type="text" icon={Cake} icon_2={Calender} />
         <Sex/>
-        <Button onclick={()=>console.log("hi")} attributes="absolute bottom-10"  value="Create"/>
+        <Button onclick={()=>console.log("hi")} attributes="absolute bottom-8 left-1/2 -translate-x-1/2"  value="Create"/>
     </form>
   )
 }

@@ -8,12 +8,12 @@ interface props{
 }
 const Layout:React.FC<props> = ({children1,children2,text="or",hr=true}) => {
   return (
-        <main className="bg-gradient-to-b overflow-x-hidden flex flex-col pt-10 space-y-5 justify-evenly items-center w-screen h-screen  from-bg_pink to-transparent">
+        <main className="bg-gradient-to-b  min-h-screen py-14 flex flex-col  space-y-10 overflow-x-hidden justify-start items-center w-screen  bg-bg_pink drop-shadow-2xl">
             {children1}
             {hr && <div className="flex space-x-2 justify-between items-center">
-                <div className="w-20 h-[1px] bg-black"></div>
-                <h2 className="font-sora_bold">{text}</h2>
-                <div className="w-20 h-[1px] bg-black"></div>
+                <div className="w-20 h-[1px] bg-hr_bg_color"></div>
+                <h2 className="font-sora_semibold">{text}</h2>
+                <div className="w-20 h-[1px] bg-hr_bg_color"></div>
             </div>}
             {children2}
         </main>    
