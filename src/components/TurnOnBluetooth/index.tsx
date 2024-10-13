@@ -6,7 +6,7 @@ const TurnOnBluetooth = () => {
         <img className="mb-5" src="../../../public/assets/images/iPhone 15 Pro.png" alt="iPhone 15 pro image " />
         <h3 className="font-sora_bold">Turn on Bluetooth</h3>
         <h4>Start searching for devices</h4>
-        <Button value="Trun on now" />
+        <Button onclick={()=>console.log("")} value="Trun on now" />
     </main>
   )
 }

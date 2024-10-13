@@ -3,7 +3,7 @@ import SexOption from '../common/sex_option'
 
 const Sex = () => {
   
-  const [active,setActice] = useState<{Male:boolean,Female:boolean}>({Male:false,Female:false})
+  const [active,_] = useState<{Male:boolean,Female:boolean}>({Male:false,Female:false})
   
   
 

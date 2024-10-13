@@ -1,4 +1,3 @@
-import { ILoginRequest } from "../../types/api.types";
 import { IAppContextAction, IUserInfo } from "../types/context.types";
 import { LoginActionTypes } from "./Login.action.types";
 

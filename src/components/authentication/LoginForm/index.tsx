@@ -2,10 +2,10 @@ import Input from "../../common/Input"
 import {UserProfile} from '../../../../public/assets/icon/Authentication/User'
 import {Password} from '../../../../public/assets/icon/Authentication/Password'
 import Eye from "../Eye"
-import { redirect, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import Button from "../../common/Button"
 import { useSuccessLogin } from "../../../services/mutations/useLogin"
-import { ChangeEvent, useContext, useState } from "react"
+import {useContext, useState } from "react"
 import { AppContext } from "../../../contexts/store"
 import { LoginActionTypes } from "../../../contexts/Login/Login.action.types"
 import { ILoginRequest } from "../../../types/api.types"
@@ -15,7 +15,7 @@ import toast from "react-hot-toast"
 const LoginForm = ():JSX.Element => {
   const login = useSuccessLogin();
   const navigate = useNavigate()
-  const {state,dispatch} = useContext(AppContext);
+  const {dispatch} = useContext(AppContext);
   const [info,setInfo] = useState<ILoginRequest>({username:"",password:""})
   const handleClick=()=>{
     // e.stopPropagation();
@@ -29,7 +29,7 @@ const LoginForm = ():JSX.Element => {
           toast.success("Welcome "+info.data.username);
           navigate("/CreatePatient")
         },
-        onError(er){
+        onError(){
           toast.error("something went wrong")
           
         }
@@ -44,8 +44,8 @@ const LoginForm = ():JSX.Element => {
 
   return (
     <form className="flex flex-col  space-y-4 max-w-[361px] ">
-        <Input value={info.username} onchange={(e:ChangeEvent)=>setInfo({...info,username:e.target.value})} placeholder="Name" icon={UserProfile} type="text"/>
-        <Input value={info.password} onchange={(e:ChangeEvent)=>setInfo({...info,password:e.target.value})} placeholder="Password" icon={Password} type="password" icon_2={<Eye/>}/>
+        <Input value={info.username} onchange={(e:any)=>setInfo({...info,username:e.target.value})} placeholder="Name" icon={UserProfile} type="text"/>
+        <Input value={info.password} onchange={(e:any)=>setInfo({...info,password:e.target.value})} placeholder="Password" icon={Password} type="password" icon_2={<Eye/>}/>
         <div className="flex space-x-1 px-2 justify-between items-center">
             <div className="flex space-x-1 px-2 items-center">
                 <input type="checkbox" defaultChecked className="checkbox" />

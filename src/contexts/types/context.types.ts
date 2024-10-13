@@ -1,5 +1,3 @@
-import { ILoginRequest } from "../../types/api.types";
-
 export interface IUserInfo {
     id:number ,
     username:string

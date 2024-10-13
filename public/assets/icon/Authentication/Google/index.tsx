@@ -1,4 +1,3 @@
-import React from 'react'
 export const Google = (
     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
 <g clip-path="url(#clip0_15_1426)">

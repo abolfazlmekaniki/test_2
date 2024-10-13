@@ -1,4 +1,3 @@
-import React from 'react'
 import Layout from '../../layouts/Main'
 import TurnOnBluetooth from '../../components/TurnOnBluetooth'
 import Devices from '../../components/common/Devices'

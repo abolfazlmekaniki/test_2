@@ -7,11 +7,11 @@ import Sex from '../Sex'
 const CreatePatientForm = ():JSX.Element => {
   return (
     <form className="flex w-full flex-col relative h-full space-y-4 max-w-[361px] ">
-        <Input placeholder="Name"  type="text"/>
-        <Input placeholder="Family"  type="text" />
-        <Input placeholder="Birthday Date" type="text" icon={Cake} icon_2={Calender} />
+        <Input value='' placeholder="Name"  type="text"/>
+        <Input value='' placeholder="Family"  type="text" />
+        <Input value='' placeholder="Birthday Date" type="text" icon={Cake} icon_2={Calender} />
         <Sex/>
-        <Button attributes="absolute bottom-10"  value="Create"/>
+        <Button onclick={()=>console.log("hi")} attributes="absolute bottom-10"  value="Create"/>
     </form>
   )
 }
