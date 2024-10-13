@@ -1,11 +1,12 @@
-
 interface props{
-    value:string
+    value:string,
+    attributes?:string,
+    onclick:()=>void
 }
 
-const Button:React.FC<props> = ({value}) => {
+const Button:React.FC<props> = ({value,attributes,onclick}) => {
   return (
-    <button className="btn w-full font-sora_med max-w-[361px] rounded-3xl bg-btn_yellow hover:bg-btn_orange">{value}</button>
+    <button type="button" onClick={onclick} className={` ${attributes} btn w-full font-sora_med max-w-[361px] rounded-3xl bg-btn_yellow hover:bg-btn_orange `}>{value}</button>
   )
 }
 

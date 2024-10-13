@@ -1,8 +1,9 @@
+import Patient from '../../components/Patient'
 import Layout from '../../layouts/Main'
 
 const CreatePatient = () => {
   return (
-    <Layout/>
+    <Layout children1={<Patient/>} hr={false}/>
   )
 }
 
