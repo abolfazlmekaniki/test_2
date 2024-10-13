@@ -43,7 +43,7 @@ const LoginForm = ():JSX.Element => {
   }
 
   return (
-    <form className="flex flex-col w-full  h-auto space-y-4 max-w-[361px] ">
+    <form className="flex flex-col w-full p-1  h-auto space-y-4 max-w-[361px] ">
         <Input value={info.username} onchange={(e:any)=>setInfo({...info,username:e.target.value})} placeholder="Name" icon={UserProfile} type="text"/>
         <Input value={info.password} onchange={(e:any)=>setInfo({...info,password:e.target.value})} placeholder="Password" icon={Password} type="password" icon_2={<Eye/>}/>
         <div className="flex space-x-1 px-2 justify-between items-center">
